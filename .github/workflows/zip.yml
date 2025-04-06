@@ -12,14 +12,14 @@ jobs:
         git config --global user.email "MrJityh@gmail.com"
         git config pull.rebase false
         git pull
-        rm -f MWPack-release.zip
+        rm -f MWPack-Release.zip
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: 'MWPack - Release.zip'
+        filename: 'MWPack-Release.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
     - name: push changes to remote
       run: |
         git add -A
-        git commit -m "new pack"
+        git commit -m "New Version Released"
         git push --force
