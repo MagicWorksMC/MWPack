@@ -1,0 +1,17 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/diamond_hoe"
+	},"overrides":[
+	  { "predicate": { "damaged": 0, "damage": 0.00064020486}, "model": "item/ridemodels/sse_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00128040973}, "model": "item/ridemodels/uoe_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00192061459}, "model": "item/ridemodels/monorailcar_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00256081946}, "model": "item/ridemodels/monorailtrain_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00320102432}, "model": "item/ridemodels/tramcar_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00384122919}, "model": "item/ridemodels/disneybus_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00448143405}, "model": "item/ridemodels/nemo_m"},
+	  { "predicate": { "damaged": 0, "damage": 0.00512163892}, "model": "item/ridemodels/lwtl_m"},
+          { "predicate": { "damaged": 0, "damage": 0.00576184379}, "model": "item/ridemodels/pylon"},
+	  { "predicate": { "damaged": 0, "damage": 0.00704676489}, "model": "item/ridemodels/elrio_m"}	  
+	]
+}
