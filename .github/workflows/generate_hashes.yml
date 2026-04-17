@@ -17,6 +17,7 @@ jobs:
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
           send-push-info: false
           commands: '["frp generatehashes"]'
+          timeout: 10000
           
           
       - name: Send Creative RCON Command
@@ -27,3 +28,4 @@ jobs:
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
           send-push-info: false
           commands: '["frp generatehashes"]'
+          timeout: 10000
