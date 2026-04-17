@@ -19,6 +19,26 @@ jobs:
           send-push-info: false
           commands: '["frp generatehashes"]'
           
+      - name: Send Main RCON Command
+        uses: MagicWorksMC/RCON-Action@v0.2.0
+        continue-on-error: true
+        with:
+          server: ${{ secrets.MWPC_HOST }}      # Pulls from org secret
+          port: ${{ secrets.MAIN_RCON_PORT }}        # Pulls from org secret
+          password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
+          send-push-info: false
+          commands: '["frp generatehashes"]'
+          
+      - name: Send Proxy RCON Command
+        uses: MagicWorksMC/RCON-Action@v0.2.0
+        continue-on-error: true
+        with:
+          server: ${{ secrets.MMWPC_HOST }}      # Pulls from org secret
+          port: ${{ secrets.STAFF_RCON_PORT }}        # Pulls from org secret
+          password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
+          send-push-info: false
+          commands: '["frp generatehashes"]'
+          
       - name: Send Creative RCON Command
         uses: MagicWorksMC/RCON-Action@v0.2.0
         continue-on-error: true
