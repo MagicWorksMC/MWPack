@@ -35,7 +35,7 @@ jobs:
         uses: MagicWorksMC/RCON-Action@v0.2.0
         continue-on-error: true
         with:
-          server: ${{ secrets.MMWPC_HOST }}      # Pulls from org secret
+          server: ${{ secrets.MWPC_HOST }}      # Pulls from org secret
           port: ${{ secrets.STAFF_RCON_PORT }}        # Pulls from org secret
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
           send-push-info: false
