@@ -33,5 +33,5 @@ jobs:
 
         # Commit using previous message and author
         git add -A
-        git commit -m "$COMMIT_MSG" || echo "No changes to commit"
+        git commit -m "$FINAL_MSG" || echo "No changes to commit"
         git push --force
