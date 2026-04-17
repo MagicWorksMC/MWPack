@@ -9,7 +9,7 @@ jobs:
   send-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Proxy RCON Command
+      - name: Send Proxy RCON Command # Send frp generatehashes to proxy server
         uses: MagicWorksMC/RCON-Action@v0.2.0
         continue-on-error: true
         with:
@@ -19,7 +19,7 @@ jobs:
           send-push-info: false
           commands: '["frp generatehashes"]'
           
-      - name: Send Main RCON Command
+      - name: Send Main RCON Command # Send frp generatehashes to main server
         uses: MagicWorksMC/RCON-Action@v0.2.0
         continue-on-error: true
         with:
@@ -29,7 +29,7 @@ jobs:
           send-push-info: false
           commands: '["frp generatehashes"]'
           
-      - name: Send Staff RCON Command
+      - name: Send Staff RCON Command # Send frp generatehashes to staff server
         uses: MagicWorksMC/RCON-Action@v0.2.0
         continue-on-error: true
         with:
@@ -39,7 +39,7 @@ jobs:
           send-push-info: false
           commands: '["frp generatehashes"]'
           
-      - name: Send Creative RCON Command
+      - name: Send Creative RCON Command # Send frp generatehashes to creative server
         uses: MagicWorksMC/RCON-Action@v0.2.0
         continue-on-error: true
         with:
