@@ -25,10 +25,11 @@ jobs:
         COMMIT_MSG="$(git log -1 --pretty=%B)"
         COMMIT_AUTHOR_NAME="$(git log -1 --pretty=%an)"
         COMMIT_AUTHOR_EMAIL="$(git log -1 --pretty=%ae)"
+        FINAL_MSG="Updated Archive - $COMMIT_AUTHOR_NAME - $COMMIT_MSG"
 
         # Configure git with previous author
-        git config user.name "$COMMIT_AUTHOR_NAME"
-        git config user.email "$COMMIT_AUTHOR_EMAIL"
+        git config user.name "Auto-Zip"
+        git config user.email "N/A"
 
         # Commit using previous message and author
         git add -A
