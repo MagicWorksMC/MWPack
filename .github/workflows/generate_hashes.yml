@@ -1,7 +1,9 @@
 name: Update Server Hashes
 on:
-  push:
-    branches: [ main ] # Triggers on updates to the main branch
+  workflow_run:
+    workflows: ["Create Archive"] # Must match the 'name' in your other file
+    types:
+      - completed # Triggers when the other workflow finishes
 
 jobs:
   send-command:
