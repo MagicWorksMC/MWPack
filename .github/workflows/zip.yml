@@ -34,3 +34,10 @@ jobs:
         git add -A
         git commit -m "$COMMIT_MSG" || echo "No changes to commit"
         git push --force
+    - name: Send Proxy RCON Command
+      uses: Plagiatus/RCON-Action@v0.3
+      with:
+        server: ${{ secrets.PROXY_HOST }}      # Pulls from org secret
+        port: ${{ secrets.PROXY_RCON_PORT }}        # Pulls from org secret
+        password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
+        commands: '["frp generatehashes"]'
