@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Proxy RCON Command
-        uses: Plagiatus/RCON-Action@v0.3
+        uses: wolfigster/rcon-action@v1.0.3
         continue-on-error: true
         with:
           server: ${{ secrets.PROXY_HOST }}      # Pulls from org secret
@@ -18,11 +18,12 @@ jobs:
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
           send-push-info: false
           commands: '["frp generatehashes"]'
+          timeout: 5000
           
           
           
       - name: Send Creative RCON Command
-        uses: Plagiatus/RCON-Action@v0.3
+        uses: wolfigster/rcon-action@v1.0.3
         continue-on-error: true
         with:
           server: ${{ secrets.CREATIVE_HOST }}      # Pulls from org secret
@@ -30,3 +31,4 @@ jobs:
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
           send-push-info: false
           commands: '["frp generatehashes"]'
+          timeout: 5000
