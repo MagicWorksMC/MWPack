@@ -5,6 +5,8 @@ on:
     types:
       - completed # Triggers when the other workflow finishes
 
+  workflow_dispatch:
+
 jobs:
   send-command:
     runs-on: ubuntu-latest
