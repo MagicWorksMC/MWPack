@@ -13,7 +13,9 @@ jobs:
           server: ${{ secrets.PROXY_HOST }}      # Pulls from org secret
           port: ${{ secrets.PROXY_RCON_PORT }}        # Pulls from org secret
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
+          send-push-info: false
           commands: '["frp generatehashes"]'
+          
           
       - name: Send Creative RCON Command
         uses: Plagiatus/RCON-Action@v0.3
@@ -21,4 +23,5 @@ jobs:
           server: ${{ secrets.CREATIVE_HOST }}      # Pulls from org secret
           port: ${{ secrets.CREATIVE_RCON_PORT }}        # Pulls from org secret
           password: ${{ secrets.RCON_PASSWORD }}  # Pulls from org secret
+          send-push-info: false
           commands: '["frp generatehashes"]'
