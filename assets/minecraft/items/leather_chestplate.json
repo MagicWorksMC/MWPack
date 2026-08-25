@@ -13,6 +13,16 @@
             "type": "minecraft:model",
             "model": "custom:item/shirts/farewell_uoe"
             }
+      },
+      {
+        "when": {
+            "slot": "chest",
+            "asset_id": "custom:shirts/fuse_logo"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "custom:item/shirts/fuse_logo"
+            }
       }
     ],
     "fallback": {
