@@ -11,7 +11,13 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "custom:item/shirts/farewell_uoe"
+            "model": "custom:item/shirts/farewell_uoe",
+            "tints": [
+                {
+                  "type": "minecraft:dye",
+                  "default": -1
+                }
+              ]
             }
       },
       {
@@ -21,7 +27,13 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "custom:item/shirts/fuse_logo"
+            "model": "custom:item/shirts/fuse_logo",
+            "tints": [
+                {
+                  "type": "minecraft:dye",
+                  "default": -1
+                }
+              ]
             }
       }
     ],
@@ -36,7 +48,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -49,7 +61,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -62,7 +74,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -75,7 +87,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -88,7 +100,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -101,7 +113,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -114,7 +126,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -127,7 +139,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -140,7 +152,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -153,7 +165,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -166,7 +178,7 @@
               "tints": [
                 {
                   "type": "minecraft:dye",
-                  "default": -6265536
+                  "default": -1
                 }
               ]
             },
@@ -179,7 +191,7 @@
           "tints": [
             {
               "type": "minecraft:dye",
-              "default": -6265536
+              "default": -1
             }
           ]
         }

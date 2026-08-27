@@ -4,7 +4,7 @@
       {
         "texture": "minecraft:leather",
         "dyeable": {
-          "color_when_undyed": 16777215
+          "color_when_undyed": -1
         }
       },
       {
