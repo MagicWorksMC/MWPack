@@ -1,0 +1,7 @@
+{
+    "parent": "block/leaves_0",
+    "textures": {
+        "texture": "block/red_poplar_leaves",
+        "particle": "block/red_poplar_leaves"
+    }
+}
